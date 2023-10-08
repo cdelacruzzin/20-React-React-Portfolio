@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/20-React-React-Portfolio/static/css/main.5a33d085.css",
-    "main.js": "/20-React-React-Portfolio/static/js/main.59b1444d.js",
-    "static/media/avatar2.PNG": "/20-React-React-Portfolio/static/media/avatar2.eef267eefe556f85549b.PNG",
-    "static/media/IMG_0877_00.png": "/20-React-React-Portfolio/static/media/IMG_0877_00.33f6d0dedf4c19c6dc49.png",
+    "main.js": "/20-React-React-Portfolio/static/js/main.197387d2.js",
+    "static/media/Capture.PNG": "/20-React-React-Portfolio/static/media/Capture.ae658277f527ed005b2f.PNG",
     "static/media/mode-de-vie.PNG": "/20-React-React-Portfolio/static/media/mode-de-vie.bfede194c3fd7af961d1.PNG",
     "static/media/MySQL-employee-tracker.PNG": "/20-React-React-Portfolio/static/media/MySQL-employee-tracker.b2d6ca749149af92a680.PNG",
     "static/media/itinerary-planner.PNG": "/20-React-React-Portfolio/static/media/itinerary-planner.71c9a159cc506323d731.PNG",
@@ -30,10 +29,10 @@
     "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.f50030880b3a655fe565.svg",
     "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
     "main.5a33d085.css.map": "/20-React-React-Portfolio/static/css/main.5a33d085.css.map",
-    "main.59b1444d.js.map": "/20-React-React-Portfolio/static/js/main.59b1444d.js.map"
+    "main.197387d2.js.map": "/20-React-React-Portfolio/static/js/main.197387d2.js.map"
   },
   "entrypoints": [
     "static/css/main.5a33d085.css",
-    "static/js/main.59b1444d.js"
+    "static/js/main.197387d2.js"
   ]
 }
