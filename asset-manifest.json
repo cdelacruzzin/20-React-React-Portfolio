@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/20-React-React-Portfolio/static/css/main.5a33d085.css",
-    "main.js": "/20-React-React-Portfolio/static/js/main.197387d2.js",
-    "static/media/Capture.PNG": "/20-React-React-Portfolio/static/media/Capture.ae658277f527ed005b2f.PNG",
+    "main.css": "/20-React-React-Portfolio/static/css/main.dd57dfcd.css",
+    "main.js": "/20-React-React-Portfolio/static/js/main.b4b139c2.js",
     "static/media/mode-de-vie.PNG": "/20-React-React-Portfolio/static/media/mode-de-vie.bfede194c3fd7af961d1.PNG",
     "static/media/MySQL-employee-tracker.PNG": "/20-React-React-Portfolio/static/media/MySQL-employee-tracker.b2d6ca749149af92a680.PNG",
     "static/media/itinerary-planner.PNG": "/20-React-React-Portfolio/static/media/itinerary-planner.71c9a159cc506323d731.PNG",
+    "static/media/Capture.PNG": "/20-React-React-Portfolio/static/media/Capture.f93e1eef7d91ed0ee994.PNG",
     "static/media/nosql-social-network-api.PNG": "/20-React-React-Portfolio/static/media/nosql-social-network-api.7cc2ad2bc642e98dcdfd.PNG",
     "static/media/ORM-e-commerce-back-end.PNG": "/20-React-React-Portfolio/static/media/ORM-e-commerce-back-end.a1d82039663783d471f6.PNG",
     "static/media/weather-dashboard.PNG": "/20-React-React-Portfolio/static/media/weather-dashboard.23a48ec550f400a33e01.PNG",
@@ -28,11 +28,11 @@
     "static/media/HTML.svg": "/20-React-React-Portfolio/static/media/HTML.aff8a9cb398fc75e4f21.svg",
     "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.f50030880b3a655fe565.svg",
     "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
-    "main.5a33d085.css.map": "/20-React-React-Portfolio/static/css/main.5a33d085.css.map",
-    "main.197387d2.js.map": "/20-React-React-Portfolio/static/js/main.197387d2.js.map"
+    "main.dd57dfcd.css.map": "/20-React-React-Portfolio/static/css/main.dd57dfcd.css.map",
+    "main.b4b139c2.js.map": "/20-React-React-Portfolio/static/js/main.b4b139c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a33d085.css",
-    "static/js/main.197387d2.js"
+    "static/css/main.dd57dfcd.css",
+    "static/js/main.b4b139c2.js"
   ]
 }
