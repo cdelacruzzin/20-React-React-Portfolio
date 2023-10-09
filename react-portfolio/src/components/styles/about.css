@@ -1,16 +1,16 @@
 .profile-container {
   width: clamp(1rem, 50vw, 15rem);
   height: clamp(1rem, 50vw, 15rem); 
-  border-radius: 50%;
-  margin: 0 auto; 
-  overflow: hidden;
+  border-radius: 40%;
+  /* margin: 0 auto; */
+  overflow: hidden; 
 }
 
 .avatar {
-  transform: scale(2.5) translateY(-9%);
-  width: 100%;
-  height: 100%; 
-  max-width: 100%;
+  transform: scale(1) translateX(-30%) ;
+  /* width: 100%; */
+  /* height: 100%;  */
+  /* max-width: 100%; */
   vertical-align: middle;
   overflow: clip;
 }
@@ -21,7 +21,7 @@
     width: 3px;
     height: 5rem;
     background: #909294;
-    margin-top: 10px;  /* Optional: You can set this to position it better */
+    margin-top: 10px;  
   }
   
   .horizontal-line{

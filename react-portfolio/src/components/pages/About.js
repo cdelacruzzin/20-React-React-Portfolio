@@ -1,10 +1,10 @@
 import { React, useState } from 'react';
 import { animated } from 'react-spring';
 import '../styles/about.css';
-import avatar1 from '../images/avatar2.png'
+import avatar2 from '../images/Capture.PNG';
 
 export default function About() {
-  
+
   const iconArr = ['css', 'express', 'git', 'github', 'HTML', 'js', 'mern', 'mongodb', 'mysql', 'node', 'npm', 'react'];
 
   const imgsrc = {};
@@ -41,9 +41,12 @@ export default function About() {
         <div className='col-md-6'>
           <div className=" h-100 d-flex flex-column align-items-center">
 
-           <div className='profile-container'>
-            <img src={avatar1} alt='avatar' className='avatar'></img>
-           </div>
+
+
+            <div className='profile-container'>
+              <img src={avatar2} alt='avatar' className='avatar'></img>
+
+            </div>
             <div className="vertical-line"></div>
             <h2 className="mt-3 heading">ABOUT ME</h2>
             <h2 className='heading'>Just a bit...</h2>
