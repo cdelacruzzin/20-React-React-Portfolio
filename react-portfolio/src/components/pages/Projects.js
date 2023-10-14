@@ -22,7 +22,8 @@ export default function Blog() {
         'https://warm-caverns-23380-13159eb09b79.herokuapp.com/login',
         'deployment',
         mode_de_vie,
-        'Mode de Vie is a social platform where users share life experiences, with a rankings page highlighting popular posts. Developed using the MVC paradigm and team collaboration, it features user authentication and database connectivity.'
+        'Mode de Vie is a social platform where users share life experiences, with a rankings page highlighting popular posts. Developed using the MVC paradigm and team collaboration, it features user authentication and database connectivity.',
+        'Bcrypt, Express, Handlebars, MySQL, Sequelize, Node.js'
       ],
       'topProjects'],
 
@@ -31,7 +32,8 @@ export default function Blog() {
         'https://koro999.github.io/itinerary-planner/',
         'deployment',
         itinerary_planner,
-        'Our website integrates Google and Wikipedia APIs to provide comprehensive information on various locations, setting us apart from Google Maps. Users can conveniently save and retrieve details about locations, allowing them to return and reference later.'
+        'Our website integrates Google and Wikipedia APIs to provide comprehensive information on various locations, setting us apart from Google Maps. Users can conveniently save and retrieve details about locations, allowing them to return and reference later.',
+        'Google Maps API, jQuery, Javascript, Html, CSS'
       ],
       'topProjects'],
 
@@ -43,7 +45,8 @@ export default function Blog() {
         'https://github.com/cdelacruzzin/18-NoSQL-Social-Network-API#demo-links',
         'demo',
         nosql_social_network_api,
-        "The SocialNetwork-API powers a social web platform allowing users to post thoughts, react to peers, and maintain a friend list. It's built on Express.js for routing, with MongoDB as the database and Mongoose ODM for data management. Date formatting is handled by Moment.js, while Faker-js seeds the database with mock user and thought data."
+        "The SocialNetwork-API powers a social web platform allowing users to post thoughts, react to peers, and maintain a friend list. It's built on Express.js for routing, with MongoDB as the database and Mongoose ODM for data management. Date formatting is handled by Moment.js, while Faker-js seeds the database with mock user and thought data.",
+        'Node.js, Express, MongoDB, Mongoose, Insomnia'
       ],
       'backEnd'],
 
@@ -52,7 +55,8 @@ export default function Blog() {
         'https://warm-spire-10804-b87ddf9aa334.herokuapp.com/',
         'deployment',
         mvc_tech_blog,
-        "The platform serves as a space for developers to both publish tech-related blogs and engage with others' posts through comments. It's constructed using Handlebars for templates, Sequelize for data modeling, and express-session for session management."
+        "The platform serves as a space for developers to both publish tech-related blogs and engage with others' posts through comments. It's constructed using Handlebars for templates, Sequelize for data modeling, and express-session for session management.",
+        'Handlebars, MVC, Node.js, MySQL, Sequelize, Insomnia, NPM.'
       ],
       'backEnd'],
 
@@ -61,7 +65,8 @@ export default function Blog() {
         'https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End#demo-links',
         'demo',
         ORM_e_commerce_back_end,
-        "This is the backend code for an e-commerce platform, built using Express.js API, Sequelize, and a MySQL database. The provided starter code was enhanced with express.js, sequelize, and dotenv for seamless MySQL interactions. The application's main endpoints are: Categories, Products, and Tags, each offering functionalities to GET (all and by ID), POST (create), PUT (update by ID), and DELETE (by ID)."
+        "This is the backend code for an e-commerce platform, built using Express.js API, Sequelize, and a MySQL database. The provided starter code was enhanced with express.js, sequelize, and dotenv for seamless MySQL interactions. The application's main endpoints are: Categories, Products, and Tags, each offering functionalities to GET (all and by ID), POST (create), PUT (update by ID), and DELETE (by ID).",
+        'Node.js, Express.js, MySQL, Sequelize, Insomnia'
       ],
       'backEnd'],
 
@@ -70,7 +75,8 @@ export default function Blog() {
         'https://drive.google.com/file/d/1_Z3yE_0LUblo5XvWU2eR_SON3tpqBQgF/view',
         'demo',
         MySQL_employee_tracker,
-        "This command-line application assists in managing a company's departments, roles, and employees. It offers an interactive interface for database operations, enabling business owners, HR professionals, and managers to maintain and access their organizational data efficiently, all from their terminal."
+        "This command-line application assists in managing a company's departments, roles, and employees. It offers an interactive interface for database operations, enabling business owners, HR professionals, and managers to maintain and access their organizational data efficiently, all from their terminal.",
+        ' Node.js, Inquirer.js, NPM, MySQL'
       ],
       'backEnd'],
   ]
@@ -81,7 +87,8 @@ export default function Blog() {
         'https://koro999.github.io/itinerary-planner/',
         'deployment',
         itinerary_planner,
-        'Our website integrates Google and Wikipedia APIs to provide comprehensive information on various locations, setting us apart from Google Maps. Users can conveniently save and retrieve details about locations, allowing them to return and reference later.'
+        'Our website integrates Google and Wikipedia APIs to provide comprehensive information on various locations, setting us apart from Google Maps. Users can conveniently save and retrieve details about locations, allowing them to return and reference later.',
+        'Google Maps API, jQuery, Javascript, Html, CSS'
       ],
       'frontEnd'],
 
@@ -90,7 +97,8 @@ export default function Blog() {
         'https://pwa-text-editor-app-98a67a010265.herokuapp.com/',
         'deployment',
         pwa_text_editor,
-        'The text editor is developed using JavaScript and Node.js and operates as a Progressive Web App, ensuring functionality even offline. With the integration of tools like Webpack and NPM, it offers smooth performance and reliable features.'
+        'The text editor is developed using JavaScript and Node.js and operates as a Progressive Web App, ensuring functionality even offline. With the integration of tools like Webpack and NPM, it offers smooth performance and reliable features.',
+        'PWA, Lighthouse, Webpack, Service Worker, IndexedDB, Cache'
       ],
       'frontEnd'],
 
@@ -99,7 +107,8 @@ export default function Blog() {
         'https://cdelacruzzin.github.io/Weather-Dashboard/',
         'deployment',
         weather_dashboard,
-        'This website provides users with the current weather and a 5-day forecast for their chosen city. It addresses the need for users to view weather predictions for various cities, aiding in their planning. The project enhanced my skills in utilizing server-side APIs and extracting relevant data from them.'
+        'This website provides users with the current weather and a 5-day forecast for their chosen city. It addresses the need for users to view weather predictions for various cities, aiding in their planning. The project enhanced my skills in utilizing server-side APIs and extracting relevant data from them.',
+        'HTML, CSS, Javascript, Weather API, jquery.'
       ],
       'frontEnd']
   ]
@@ -138,6 +147,11 @@ export default function Blog() {
                   </a>
                 </div>
               </div>
+              <div className="repo bg-dark d-flex flex-column align-self-center">
+                  <a className='project-links  d-flex align-self-center justify-content-center' href={projectCategory[1][1]}>
+                    {projectCategory[1][5]}
+                  </a>
+                </div>
 
               <div className="repo bg-dark d-flex flex-column align-self-center ">
                 <h2  className='project-links d-flex align-self-center justify-content-center my-3 underlined'>
