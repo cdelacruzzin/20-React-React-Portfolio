@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import { animated } from 'react-spring';
 import '../styles/about.css';
 import avatar2 from '../images/Capture.PNG';
+import resume from '../images/CarlosD-Resume.pdf';
 
 export default function About() {
 
@@ -65,7 +66,7 @@ export default function About() {
             </p>
 
             <h2 className='my-3'>Check out my resume</h2>
-            <a href='https://docs.google.com/document/d/1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc/edit?usp=sharing' className=' mb-4 mt-1 resume-a' id='resume'>
+            <a href={resume} className=' mb-4 mt-1 resume-a' id='resume'>
               <img src={require('../images/skillIcons/resume.svg').default} alt='resume' />
             </a>
             <div className="vertical-line"></div>

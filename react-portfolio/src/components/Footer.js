@@ -1,5 +1,6 @@
 import { React, useState } from 'react';
-import './styles/footer.css'
+import './styles/footer.css';
+import resume from './images/CarlosD-Resume.pdf';
 
 function Footer({ currentPage, handlePageChange }) {
 
@@ -13,7 +14,11 @@ function Footer({ currentPage, handlePageChange }) {
     };
     const imgsrc = {};
     const googleDocID = '1zke1d35Mmcl6ZtYxAuzp1ZBTjjPvKcw6suzLyIquCGc';
-    const googleDocURL = `https://docs.google.com/document/d/${googleDocID}/export?format=pdf`;
+    const googleDocURL = `https://docs.google.com/document/d/${googleDocID}/view`;
+    const resumeURL = '/CarlosD-Resume.pdf';
+
+
+    
 
     for (let index = 0; index < icons.length; index++) {
         imgsrc[icons[index]] = require(`./images/skillIcons/${icons[index]}.svg`)
@@ -43,7 +48,7 @@ function Footer({ currentPage, handlePageChange }) {
                 onMouseOver={handleHover}
                 onMouseOut={handleHoverOut}
                 style={{ transform: scaleStyle[index] }}
-                {...(isLast ? { href: googleDocURL, download: "Carlos'-Resume.pdf"} : { href: iconLinks[icon] })}
+                {...(isLast ? { href: resume } : { href: iconLinks[icon] })}
             >
                 <img src={imgsrc[icon]} alt={icon} />
             </a>

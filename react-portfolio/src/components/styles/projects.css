@@ -106,3 +106,23 @@
     border-radius: 20px;
     overflow: hidden;
 }
+.repo::before {
+    content: "";
+    display: block;
+    width: 10%; 
+    visibility: hidden;  /* Make it invisible but still occupy space */
+}
+
+.repo::after {
+    content: "";
+    display: block;
+    width: 10%;  /* Or however much extra width you want */
+    visibility: hidden;
+}
+.underlined {
+    border-bottom: 3px solid currentColor; /* Adjust the '3px' value for thickness */
+    text-decoration: none;
+   width: auto;
+    padding-bottom: 2px; /* Optional: Adjust spacing between text and underline */
+}
+
