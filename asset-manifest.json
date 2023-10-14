@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/20-React-React-Portfolio/static/css/main.74ce56f8.css",
-    "main.js": "/20-React-React-Portfolio/static/js/main.01460a60.js",
+    "main.js": "/20-React-React-Portfolio/static/js/main.0335685f.js",
     "static/media/mode-de-vie.PNG": "/20-React-React-Portfolio/static/media/mode-de-vie.bfede194c3fd7af961d1.PNG",
     "static/media/MySQL-employee-tracker.PNG": "/20-React-React-Portfolio/static/media/MySQL-employee-tracker.b2d6ca749149af92a680.PNG",
     "static/media/itinerary-planner.PNG": "/20-React-React-Portfolio/static/media/itinerary-planner.71c9a159cc506323d731.PNG",
@@ -30,10 +30,10 @@
     "static/media/npm.svg": "/20-React-React-Portfolio/static/media/npm.f50030880b3a655fe565.svg",
     "static/media/react.svg": "/20-React-React-Portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
     "main.74ce56f8.css.map": "/20-React-React-Portfolio/static/css/main.74ce56f8.css.map",
-    "main.01460a60.js.map": "/20-React-React-Portfolio/static/js/main.01460a60.js.map"
+    "main.0335685f.js.map": "/20-React-React-Portfolio/static/js/main.0335685f.js.map"
   },
   "entrypoints": [
     "static/css/main.74ce56f8.css",
-    "static/js/main.01460a60.js"
+    "static/js/main.0335685f.js"
   ]
 }
