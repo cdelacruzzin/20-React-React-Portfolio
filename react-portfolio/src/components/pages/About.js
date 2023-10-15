@@ -57,7 +57,9 @@ export default function About() {
               University of Toronto's esteemed full-stack flex development bootcamp with a
               95%, I specialize in database management, including both MySQL and NoSQL, Express,
               React, Node.js.
-              <h2 className='my-5'>Educational Milestones</h2>
+            </p>
+            <h2 className='my-5'>Educational Milestones</h2>
+            <p>
               The bootcamp experience at University of Toronto was an intensive but fulfilling journey.
               The curriculum was comprehensive, covering everything from fundamental web development
               techniques to the nuanced applications of modern JavaScript frameworks.

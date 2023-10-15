@@ -60,15 +60,15 @@ export default function Blog() {
       ],
       'backEnd'],
 
-    ['ORM-E-Commerce-Back-End',
-      ['https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End',
-        'https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End#demo-links',
-        'demo',
-        ORM_e_commerce_back_end,
-        "This is the backend code for an e-commerce platform, built using Express.js API, Sequelize, and a MySQL database. The provided starter code was enhanced with express.js, sequelize, and dotenv for seamless MySQL interactions. The application's main endpoints are: Categories, Products, and Tags, each offering functionalities to GET (all and by ID), POST (create), PUT (update by ID), and DELETE (by ID).",
-        'Node.js, Express.js, MySQL, Sequelize, Insomnia'
-      ],
-      'backEnd'],
+    // ['ORM-E-Commerce-Back-End',
+    //   ['https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End',
+    //     'https://github.com/cdelacruzzin/13-Object-Relational-Mapping-ORM-E-Commerce-Back-End#demo-links',
+    //     'demo',
+    //     ORM_e_commerce_back_end,
+    //     "This is the backend code for an e-commerce platform, built using Express.js API, Sequelize, and a MySQL database. The provided starter code was enhanced with express.js, sequelize, and dotenv for seamless MySQL interactions. The application's main endpoints are: Categories, Products, and Tags, each offering functionalities to GET (all and by ID), POST (create), PUT (update by ID), and DELETE (by ID).",
+    //     'Node.js, Express.js, MySQL, Sequelize, Insomnia'
+    //   ],
+    //   'backEnd'],
 
     ['SQL-Employee-Tracker',
       ['https://github.com/cdelacruzzin/12-SQL-Employee-Tracker',
@@ -82,15 +82,15 @@ export default function Blog() {
   ]
 
   const frontEnd = [
-    ['Itinerary-Planner',
-      ['https://github.com/Koro999/itinerary-planner',
-        'https://koro999.github.io/itinerary-planner/',
-        'deployment',
-        itinerary_planner,
-        'Our website integrates Google and Wikipedia APIs to provide comprehensive information on various locations, setting us apart from Google Maps. Users can conveniently save and retrieve details about locations, allowing them to return and reference later.',
-        'Google Maps API, jQuery, Javascript, Html, CSS'
-      ],
-      'frontEnd'],
+    // ['Itinerary-Planner',
+    //   ['https://github.com/Koro999/itinerary-planner',
+    //     'https://koro999.github.io/itinerary-planner/',
+    //     'deployment',
+    //     itinerary_planner,
+    //     'Our website integrates Google and Wikipedia APIs to provide comprehensive information on various locations, setting us apart from Google Maps. Users can conveniently save and retrieve details about locations, allowing them to return and reference later.',
+    //     'Google Maps API, jQuery, Javascript, Html, CSS'
+    //   ],
+    //   'frontEnd'],
 
     ['PWA-Text-Editor',
       ['https://github.com/cdelacruzzin/19-Progressive-Web-Applications-PWA-Text-Editor',
@@ -116,13 +116,37 @@ export default function Blog() {
 
 
 
+  const [hoveredProjectID, setHoveredProjectID] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+
+  console.log(isVisible)
   const setProjects = (projects) => {
-    return projects.map((projectCategory) => {
+
+    return projects.map((projectCategory, index) => {
       const src = projectCategory[1][3];
 
       return (
         <div className='project-entry-column col-md-4'>
-          <div className='img-container'>
+          <div
+          onClick={() => {
+            if (hoveredProjectID !== projectCategory[0]) {
+              setHoveredProjectID(projectCategory[0]);
+              setIsVisible(true);
+            } else {
+              setHoveredProjectID(null);
+              setIsVisible(false);
+            }
+          }}
+            onMouseEnter={() => {
+              setHoveredProjectID(projectCategory[0]);
+              setIsVisible(true);
+            }}
+            onMouseLeave={() => {
+              setHoveredProjectID(null);
+              setIsVisible(false);
+            }}
+            className='img-container'>
             <div className='thumb-info thumb-info-hide-wrapper-bg'>
               <span className='img-wrapper'>
                 <img src={src} className='project-img' alt={`Project-${projectCategory[0]}`} />
@@ -133,41 +157,74 @@ export default function Blog() {
                 </span>
               </span>
             </div>
-            <div className="description-box d-flex flex-column justify-content-center ">
+            {hoveredProjectID === projectCategory[0] && (
+              <div className={isVisible ? "description-box visible d-flex flex-column justify-self-center align-self-center" : "description-box d-flex flex-column justify-self-center align-self-center"}>
 
-              <div className='d-flex flex-row justify-content-center'>
-                <div className="repo bg-dark d-flex">
-                  <a className='project-links d-flex align-self-center justify-content-center' href={projectCategory[1][0]}>
-                    github
-                  </a>
+                <div className='d-flex flex-row justify-content-center'>
+                  <div className="repo bg-dark d-flex">
+                    <a className='project-links d-flex align-self-center justify-content-center' href={projectCategory[1][0]}>
+                      github
+                    </a>
+                  </div>
+                  <div className="repo bg-dark d-flex">
+                    <a className='project-links  d-flex align-self-center justify-content-center' href={projectCategory[1][1]}>
+                      {projectCategory[1][2]}
+                    </a>
+                  </div>
                 </div>
-                <div className="repo bg-dark d-flex">
-                  <a className='project-links  d-flex align-self-center justify-content-center' href={projectCategory[1][1]}>
-                    {projectCategory[1][2]}
-                  </a>
-                </div>
-              </div>
-              <div className="repo bg-dark d-flex flex-column align-self-center">
-                  <a className='project-links  d-flex align-self-center justify-content-center' href={projectCategory[1][1]}>
+                <div className="repo bg-dark d-flex flex-column align-self-center">
+                  <a className='project-links px-5 d-flex  text-center' href={projectCategory[1][1]}>
                     {projectCategory[1][5]}
                   </a>
                 </div>
 
-              <div className="repo bg-dark d-flex flex-column align-self-center ">
-                <h2  className='project-links d-flex align-self-center justify-content-center my-3 underlined'>
-                  <strong >Project Description</strong>
-                </h2>
-                <p>
-                {projectCategory[1][4]}
-              </p>
+                <div className="repo-desc bg-dark d-flex flex-column align-self-center ">
+                  <h2 className='project-links d-flex align-self-center justify-content-center my-3 underlined'>
+                    <strong >Project Description</strong>
+                  </h2>
+                  <p className='p-3'>
+                    {projectCategory[1][4]}
+                  </p>
+                </div>
               </div>
-              
-            </div>
+
+
+            )}
           </div>
         </div>
       );
     });
   };
+
+
+  // <div className="description-box d-flex flex-column justify-content-center ">
+  //             <div className='d-flex flex-row justify-content-center'>
+  //               <div className="repo bg-dark d-flex">
+  //                 <a className='project-links d-flex align-self-center justify-content-center' href={projectCategory[1][0]}>
+  //                   github
+  //                 </a>
+  //               </div>
+  //               <div className="repo bg-dark d-flex">
+  //                 <a className='project-links  d-flex align-self-center justify-content-center' href={projectCategory[1][1]}>
+  //                   {projectCategory[1][2]}
+  //                 </a>
+  //               </div>
+  //             </div>
+  //             <div className="repo bg-dark d-flex flex-column align-self-center">
+  //                 <a className='project-links  d-flex align-self-center justify-content-center' href={projectCategory[1][1]}>
+  //                   {projectCategory[1][5]}
+  //                 </a>
+  //               </div>
+
+  //             <div className="repo-desc bg-dark d-flex flex-column align-self-center ">
+  //               <h2  className='project-links d-flex align-self-center justify-content-center my-3 underlined'>
+  //                 <strong >Project Description</strong>
+  //               </h2>
+  //               <p>
+  //               {projectCategory[1][4]}
+  //             </p>
+  //             </div>
+  //           </div>
 
 
 
